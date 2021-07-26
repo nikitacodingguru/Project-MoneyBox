@@ -50,3 +50,66 @@
    color:black;
     
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.fullbox {
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    height: 310px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    background-color: pink;
+}
+.nameofthegoalline {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.amountline {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.periodline {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.startline {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.percentline {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.monthamountline {
+    padding-left: 90px;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+.monthamount {
+    font-size: 20px;
+}
+.monthamountinput {
+    margin-left: 55px;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+}
+input {
+    width: 80px;
+}
