@@ -1,0 +1,52 @@
+.wrapper {
+    color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.main-block {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 336px;
+    height: 236px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #de2d77;
+}
+
+.pig-block   {
+    
+    list-style: none;
+    display: flex;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.pig-block:hover {
+    background-color: grey;
+    
+}
+
+.pig {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.paragraf {
+   display: flex;
+   justify-content: center;
+   align-items:flex-end;
+   color:black;
+    
+}
