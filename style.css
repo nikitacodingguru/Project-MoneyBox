@@ -45,19 +45,21 @@
    align-items:flex-end;
    color:black;
 }
-.block-target {
+/* .block-target {
      margin: 0 0 0 15px;
-}
+} */
 .block2 {
     font-family: 'Roboto', sans-serif;
     width: 260px;
-    height: auto;
+    height: 100%;
     background: #de2d77;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     padding-top: 20px;
     margin-left: 15px;
+    display: none;
  }
+ 
 .block2-value {
     text-align: center;
 }
@@ -89,7 +91,9 @@
     height: auto;
 }
 .out-result {
-    margin: 15px 0 0px 42px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     width: 180px;
     height: 30px;
     background-color: antiquewhite;
@@ -97,7 +101,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
 }
 .dn {
     display: none;
