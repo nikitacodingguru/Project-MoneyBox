@@ -16,6 +16,8 @@ const input4 = document.querySelector(".startlineinput");
 const input5 = document.querySelector(".percentlineinput");
 const outResultBlock = document.querySelector(".out-result");
 
+const mainblockk = document.querySelector('.mainblock')
+
 let arrObj = [];
 
 const addInputValueInObject = () => {
@@ -43,16 +45,25 @@ const addInputValueInObject = () => {
   );
   outResult.innerText = resultBlockCalculation.toFixed(4);
   outResultBlock.innerText = resultBlockCalculation.toFixed(4);
+
+  addBlock()
 };
 
 btn.addEventListener("click", addInputValueInObject);
 
+function addBlock () {
+    let blockk2 = document.querySelector('.block2')
+    const blockCopy = blockk2.cloneNode(true);
+    mainblockk.append(blockCopy)
+}
+
+// console.log(arrObj);
+let sumPerMonth;
 const calculation = (amount, term, start, deposit) => {
   let treb = amount;
   let srok = term;
   let proc = deposit;
   let sumProc = 0;
-
   for (i = 1; i < srok + 1; i++) {
     sumProc = sumProc + (1 + proc / 100) ** i;
   }
