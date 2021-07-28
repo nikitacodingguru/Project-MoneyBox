@@ -53,6 +53,9 @@ const addInputValueInObject = () => {
   outResultBlock.innerText = resultBlockCalculation.toFixed(4);
 
   addBlock()
+
+
+
 };
 
 btn.addEventListener("click", addInputValueInObject);
@@ -60,7 +63,26 @@ btn.addEventListener("click", addInputValueInObject);
 function addBlock () {
     let blockk2 = document.querySelector('.block2')
     const blockCopy = blockk2.cloneNode(true);
+    blockCopy.style.display = 'block';
+
+
+    // blockCopy.querySelector('.block2-amount-sum') = ''
+    // blockCopy.querySelector('.block2-term') = ''
+    // blockCopy.querySelector('.block2-start') = ''
+    // blockCopy.querySelector('.block2-deposit') = ''
+    // blockCopy.querySelector('.block2-target-name') = ''
+
+    blockCopy.querySelector('.bin').addEventListener('click', () => {
+      blockCopy.remove()
+    })
     mainBlock.append(blockCopy)
+
+    outResultAmount.querySelector('.block2-amount-sum') = ''
+    outResultTerm.querySelector('.block2-term') = ''
+    outResulStart.querySelector('.block2-start') = ''
+    outResulDeposit.querySelector('.block2-deposit') = ''
+    outResultName.querySelector('.block2-target-name') = ''
+
 }
 
 // console.log(arrObj);
@@ -107,4 +129,7 @@ img.addEventListener('click', () => {
 
 bin.addEventListener('click',() => {
     block2.remove()
+})
+btn.addEventListener('click', () => {
+  block2.classList.add('active')
 })
