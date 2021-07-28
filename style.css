@@ -1,42 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 .wrapper {
-   color: #E5E5E5;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #fff;
+    color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
-
 .main-block {
-   margin: 10px;
-   display: flex;
-   justify-content: center;
-   align-items:center;
-   flex-direction: column;
-   width: 336px;
-   height: 236px;
-   border: 1px solid #C4C4C4;
-   box-sizing: border-box;
-   border-radius: 10px;
-   background-color: #de2d77;
-   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 336px;
+    height: 236px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #de2d77;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
 .pig-block   {
-   list-style: none;
-   display: flex;
-   background-color: #fff;
-   width: 80px;
-   height: 80px;
-   border-radius: 50px;
+    list-style: none;
+    display: flex;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
 }
-
 .pig-block:hover {
-   background-color: grey;
+    background-color: grey;
 }
-
 .pig {
    display: block;
    margin: auto;
@@ -44,80 +39,71 @@
    width: 50px;
    height: 50px;
 }
-
 .paragraf {
    display: flex;
    justify-content: center;
    align-items:flex-end;
    color:black;
 }
-
-.block-target {
-   margin: 0 0 0 15px;
+ .block-target {
+     margin: 0 0 0 15px;
 }
-
-.block2 {
-   font-family: 'Roboto', sans-serif;
-   width: 260px;
-   height: 100%;
-   background: #de2d77;
-   border-radius: 10px;
-   box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-   padding-top: 20px;
-}
-
+ .block2 {
+    font-family: 'Roboto', sans-serif;
+    width: 260px;
+    height: auto;
+    background: #de2d77;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding-top: 20px;
+    margin-left: 15px;
+ }
 .block2-value {
-   text-align: center;
+    text-align: center;
 }
-
 .text {
-   width: 50%;
-   height: 15px;
-   border-radius: 3px;
-   border: none;
-   margin-left: 15px;
+    width: 50%;
+    height: 15px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 15px;
 }
-
 .block2-div {
-   text-align: center;
+    text-align: center;
 }
-
 .block2-div p {
-   color: antiquewhite;
-   width: 260px;
-   height: auto;
+    color: antiquewhite;
+    width: 260px;
+    height: auto;
 }
-
 .out-result {
-   margin: 15px 0 0px 42px;
-   width: 180px;
-   height: 30px;
-   background-color: antiquewhite;
-   border-radius: 10px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    margin: 15px 0 0px 42px;
+    width: 180px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
-
 .dn {
-   margin: 10px;
-   display: flex;
-}
-
-.dn.active {
-   margin: 10px;
-   display: flex;
-   justify-content: space-between;
-}
-
+    margin: 10px;
+    display: flex;
+  }
+  .dn.active {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
 .fullbox {
-   align-items:center;
-   font-family: 'Roboto', sans-serif;
-   width: 330px;
-   height: 343px;
-   border: 1px solid #E5E5E5;
-   border-radius: 10px;
-   background-color: pink;
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+    min-width: 330px;
+    height: 343px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    background-color: pink;
 }
 
 .nameofthegoalline {
@@ -161,24 +147,24 @@
 }
 
 .monthamountline {
-   justify-content: space-between;
-   margin-top: 30px;
-   text-align: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .monthamount {
-   font-size: 20px;
-   text-align: center;
+    font-size: 20px;
+    text-align: center;
 }
 
 .monthamountinput {
-   text-align: center;
-   margin-top: 10px;
-   height: 30px;
-   width: 200px;
-   background-color: aliceblue;
-   border-radius: 10px;
-   margin-left: 65px;
+    text-align: center;
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-left: 65px;
 }
 
 input {
@@ -195,4 +181,13 @@ input {
    border: none;
    cursor: pointer;
  background-color: aliceblue;
+}
+.blockk2 {
+    font-family: 'Roboto', sans-serif;
+    width: 260px;
+    height: 100%;
+    background: #de2d77;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding-top: 20px;
 }
