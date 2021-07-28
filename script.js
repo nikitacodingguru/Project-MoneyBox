@@ -16,13 +16,13 @@ const input4 = document.querySelector(".startlineinput");
 const input5 = document.querySelector(".percentlineinput");
 const outResultBlock = document.querySelector(".out-result");
 
-const mainBlock = document.querySelector('.mainblock')
-const mainBlockInitial = document.querySelector('.main-block')
-const fullBox = document.querySelector('.fullbox')
-const img = document.querySelector('.pig')
-const dn = document.querySelector('.dn')
-const bin = document.querySelector('.bin')
-const block2 = document.querySelector('.block2')
+const mainBlock = document.querySelector(".mainblock");
+const mainBlockInitial = document.querySelector(".main-block");
+const fullBox = document.querySelector(".fullbox");
+const img = document.querySelector(".pig");
+const dn = document.querySelector(".dn");
+const bin = document.querySelector(".bin");
+const block2 = document.querySelector(".block2");
 
 let arrObj = [];
 
@@ -49,43 +49,28 @@ const addInputValueInObject = () => {
     resultInputValue.start,
     resultInputValue.deposit
   );
-  outResult.innerText = resultBlockCalculation.toFixed(4);
-  outResultBlock.innerText = resultBlockCalculation.toFixed(4);
 
-  addBlock()
+  if (isFinite(resultBlockCalculation)) {
+    outResult.innerText = resultBlockCalculation.toFixed(4);
+    outResultBlock.innerText = resultBlockCalculation.toFixed(4);
+  }
 
-
-
+  addBlock();
 };
 
 btn.addEventListener("click", addInputValueInObject);
 
-function addBlock () {
-    let blockk2 = document.querySelector('.block2')
-    const blockCopy = blockk2.cloneNode(true);
-    blockCopy.style.display = 'block';
+function addBlock() {
+  let blockk2 = document.querySelector(".block2");
+  const blockCopy = blockk2.cloneNode(true);
+  blockCopy.style.display = "block";
 
-
-    // blockCopy.querySelector('.block2-amount-sum') = ''
-    // blockCopy.querySelector('.block2-term') = ''
-    // blockCopy.querySelector('.block2-start') = ''
-    // blockCopy.querySelector('.block2-deposit') = ''
-    // blockCopy.querySelector('.block2-target-name') = ''
-
-    blockCopy.querySelector('.bin').addEventListener('click', () => {
-      blockCopy.remove()
-    })
-    mainBlock.append(blockCopy)
-
-    outResultAmount.querySelector('.block2-amount-sum') = ''
-    outResultTerm.querySelector('.block2-term') = ''
-    outResulStart.querySelector('.block2-start') = ''
-    outResulDeposit.querySelector('.block2-deposit') = ''
-    outResultName.querySelector('.block2-target-name') = ''
-
+  blockCopy.querySelector(".bin").addEventListener("click", () => {
+    blockCopy.remove();
+  });
+  mainBlock.append(blockCopy);
 }
 
-// console.log(arrObj);
 let sumPerMonth;
 const calculation = (amount, term, start, deposit) => {
   let treb = amount;
@@ -116,20 +101,25 @@ const changeResult = () => {
     resultInputValue.start,
     resultInputValue.deposit
   );
-  outResult.innerText = resultBlockCalculation.toFixed(4);
-  outResultBlock.innerText = resultBlockCalculation.toFixed(4);
+  if (isFinite(resultBlockCalculation)) {
+    outResult.innerText = resultBlockCalculation.toFixed(4);
+    outResultBlock.innerText = resultBlockCalculation.toFixed(4);
+  }
 };
 
 input2.addEventListener("keyup", changeResult);
+input3.addEventListener("keyup", changeResult);
+input4.addEventListener("keyup", changeResult);
+input5.addEventListener("keyup", changeResult);
 
-img.addEventListener('click', () => {
-    mainBlockInitial.remove()
-    document.querySelector('#dn').classList.add('active')
-})
+img.addEventListener("click", () => {
+  mainBlockInitial.remove();
+  document.querySelector("#dn").classList.add("active");
+});
 
-bin.addEventListener('click',() => {
-    block2.remove()
-})
-btn.addEventListener('click', () => {
-  block2.classList.add('active')
-})
+bin.addEventListener("click", () => {
+  block2.remove();
+});
+btn.addEventListener("click", () => {
+  block2.classList.add("active");
+});
