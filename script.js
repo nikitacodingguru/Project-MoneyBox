@@ -16,7 +16,13 @@ const input4 = document.querySelector(".startlineinput");
 const input5 = document.querySelector(".percentlineinput");
 const outResultBlock = document.querySelector(".out-result");
 
-const mainblockk = document.querySelector('.mainblock')
+const mainBlock = document.querySelector('.mainblock')
+const mainBlockInitial = document.querySelector('.main-block')
+const fullBox = document.querySelector('.fullbox')
+const img = document.querySelector('.pig')
+const dn = document.querySelector('.dn')
+const bin = document.querySelector('.bin')
+const block2 = document.querySelector('.block2')
 
 let arrObj = [];
 
@@ -54,7 +60,7 @@ btn.addEventListener("click", addInputValueInObject);
 function addBlock () {
     let blockk2 = document.querySelector('.block2')
     const blockCopy = blockk2.cloneNode(true);
-    mainblockk.append(blockCopy)
+    mainBlock.append(blockCopy)
 }
 
 // console.log(arrObj);
@@ -93,3 +99,12 @@ const changeResult = () => {
 };
 
 input2.addEventListener("keyup", changeResult);
+
+img.addEventListener('click', () => {
+    mainBlockInitial.remove()
+    document.querySelector('#dn').classList.add('active')
+})
+
+bin.addEventListener('click',() => {
+    block2.remove()
+})
