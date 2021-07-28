@@ -45,19 +45,24 @@
    align-items:flex-end;
    color:black;
 }
-.block-target {
-     margin: 0 0 0 15px;
-}
+
+
 .block2 {
     font-family: 'Roboto', sans-serif;
     width: 260px;
-    height: auto;
+    height: 100%;
     background: #de2d77;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     padding-top: 20px;
     margin-left: 15px;
+    display: none;
  }
+
+ .block2.active {
+    display: block;
+ }
+
 .block2-value {
     text-align: center;
 }
@@ -116,6 +121,8 @@
     border-radius: 10px;
     background-color: pink;
 }
+
+
 
 .nameofthegoalline {
    display: flex;
@@ -201,4 +208,5 @@ input {
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0 0 0 / 50%);
     padding-top: 20px;
+    
 }

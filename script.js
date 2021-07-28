@@ -105,6 +105,10 @@ img.addEventListener('click', () => {
     document.querySelector('#dn').classList.add('active')
 })
 
+btn.addEventListener('click',() => {
+    block2.classList.add('active')
+})
+
 bin.addEventListener('click',() => {
     block2.remove()
 })
